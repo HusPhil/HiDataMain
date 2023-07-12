@@ -1,0 +1,86 @@
+  CSProject2.DemoForm.resources - Embedded, ContainedInManifestFile, 
+  CSProject2.LoginForm.resources - Embedded, ContainedInManifestFile, 
+  CSProject2.MainPage.resources - Embedded, ContainedInManifestFile, 
+  CSProject2.MainW.resources - Embedded, ContainedInManifestFile, 
+  CSProject2.MessageBoxClass.resources - Embedded, ContainedInManifestFile, 
+  CSProject2.RegisterForm.resources - Embedded, ContainedInManifestFile, 
+ImageRuntimeVersion: v4.0.30319
+Assembly CSProject2, Version=0.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class CSProject2.LoadForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class FormLoader: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Boolean encOn : Public
+    Boolean decOn : Public
+  Methods:
+    getMainFrm(): PrivateScope, Public, HideBySig
+    setMainFrm(Form): PrivateScope, Public, HideBySig
+    getLogFrm(): PrivateScope, Public, HideBySig
+    setLogFrm(Form, String): PrivateScope, Public, HideBySig
+    setLogFrm(Form): PrivateScope, Public, HideBySig
+    getRegFrm(): PrivateScope, Public, HideBySig
+    setRegFrm(Form): PrivateScope, Public, HideBySig
+    getDemoFrm(): PrivateScope, Public, HideBySig
+    getDemoFrm(String): PrivateScope, Public, HideBySig
+    setDemoFrm(Form): PrivateScope, Public, HideBySig
+    getPromptFrm(): PrivateScope, Public, HideBySig
+    setPromptFrm(Form): PrivateScope, Public, HideBySig
+    getUsertxt(): PrivateScope, Public, HideBySig
+    setUsertxt(String): PrivateScope, Public, HideBySig
+Class CSProject2.DemoForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    FormLoader fl IsByValue : Public, InitOnly
+Class CSProject2.PopUp: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class CSProject2.RegisterForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    FormLoader fl IsByValue : Public, InitOnly
+Class CSProject2.MainW: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    FormLoader fl IsByValue : Public, InitOnly
+    System.Windows.Forms.RichTextBox txtInput : Public
+    System.Windows.Forms.RichTextBox txtOutput : Public
+    System.Windows.Forms.Label lblUserName : Public
+  Methods:
+    filePath(basic_string<char\,std::char_traits<char>\,std::allocator<char> >*): PrivateScope, Public, HideBySig
+    reverse_text(basic_string<char\,std::char_traits<char>\,std::allocator<char> >*, basic_string<char\,std::char_traits<char>\,std::allocator<char> >*): PrivateScope, Public, HideBySig
+    encryptFile(): PrivateScope, Public, HideBySig
+    MainW_Load(Object, EventArgs): PrivateScope, Public, HideBySig
+Class CSProject2.MessageBoxClass: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    CSProject2.MainW demo : Public
+Class CSProject2.LoginForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    FormLoader fl IsByValue : Public, InitOnly
+    System.Windows.Forms.TextBox txbUser : Public
+  Methods:
+    setUser(String): PrivateScope, Public, HideBySig
+Class CSProject2.MainPage: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
